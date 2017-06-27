@@ -19,6 +19,11 @@ type Command struct {
 
 // ActiveCommands the commands that are enabled and ready to being used.
 var ActiveCommands = []Command{
+	GopherNewbieResourcesCommand,
+	GopherRecommendedChannelsCommand,
+	GopherDatabaseTutorialCommand,
+	GopherPackageLayoutCommand,
+	GopherLibraryForCommand,
 	VersionCommand,
-	BotVersionCommand,
+	VersionBotCommand,
 }

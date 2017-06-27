@@ -8,15 +8,17 @@ import (
 
 // VersionCommand "version" shows the ion's current version.
 var VersionCommand = Command{
-	Name: "version",
+	Name:        "version",
+	Description: "outputs the ion's current version",
 	Handler: func(bot *Slack, c hanu.ConversationInterface) {
 		c.Reply("ion's current version is: " + ion.Version)
 	},
 }
 
-// BotVersionCommand "bot-version" shows the bot's current version.
-var BotVersionCommand = Command{
-	Name: "bot-version",
+// VersionBotCommand "version bot" shows the bot's current version.
+var VersionBotCommand = Command{
+	Name:        "version bot",
+	Description: "outputs the bot's current version",
 	Handler: func(bot *Slack, c hanu.ConversationInterface) {
 		c.Reply("bot's current version is: " + Version)
 	},
